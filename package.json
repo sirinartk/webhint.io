@@ -15,7 +15,8 @@
     "moment": "^2.24.0",
     "request": "^2.88.0",
     "strip-indent": "^3.0.0",
-    "xss-filters": "^1.2.7"
+    "xss-filters": "^1.2.7",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@hint/artwork": "^2.2.1",
@@ -90,6 +91,9 @@
     "test-local": "hint http://localhost:8080 --tracking=off",
     "test-staging": "hint https://sonarwhal-staging.azurewebsites.net --tracking=on",
     "update-site": "node helpers/update-site.js",
-    "postinstall": "node helpers/postinstall.js"
-  }
+    "postinstall": "node helpers/postinstall.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
