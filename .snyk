@@ -1,0 +1,28 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T03:13:05.901Z'
+    - '@hint/formatter-html > lodash':
+        patched: '2020-05-01T03:13:05.901Z'
+    - hint > lodash:
+        patched: '2020-05-01T03:13:05.901Z'
+    - '@hint/formatter-html > @hint/utils > lodash':
+        patched: '2020-05-01T03:13:05.901Z'
+    - hint > @hint/utils > lodash:
+        patched: '2020-05-01T03:13:05.901Z'
+    - hint > @hint/configuration-web-recommended > @hint/hint-no-vulnerable-javascript-libraries > lodash:
+        patched: '2020-05-01T03:13:05.901Z'
+    - hint > @hint/configuration-web-recommended > @hint/connector-chrome > @hint/utils-debugging-protocol-common > lodash:
+        patched: '2020-05-01T03:13:05.901Z'
+    - hint > @hint/configuration-web-recommended > @hint/hint-image-optimization-cloudinary > cloudinary > lodash:
+        patched: '2020-05-01T03:13:05.901Z'
+    - hint > @hint/configuration-web-recommended > @hint/connector-chrome > @hint/utils-debugging-protocol-common > @hint/utils > lodash:
+        patched: '2020-05-01T03:13:05.901Z'
+    - hint > @hint/configuration-web-recommended > @hint/connector-chrome > @hint/utils-debugging-protocol-common > @hint/utils-connector-tools > @hint/utils > lodash:
+        patched: '2020-05-01T03:13:05.901Z'
+    - hint > @hint/configuration-web-recommended > @hint/parser-html > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2020-05-01T03:13:05.901Z'
